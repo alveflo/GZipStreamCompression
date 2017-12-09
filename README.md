@@ -20,7 +20,7 @@ Given JSON as:
 ```
 ### Result
 | List entries | JSON size | Compressed size |
-| :------------- | :------------- |
+| :------------- | :------------- | :------------- |
 | 1 | 204 bytes | 241 bytes |
 | 10 | 2 KB | 1.1 KB |
 | 100 | 19.1 KB | 7.8 KB |
