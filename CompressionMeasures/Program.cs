@@ -16,6 +16,7 @@ namespace CompressionMeasures
             var thousand = new MeasureEntry(1000);
             var tenThousand = new MeasureEntry(10000);
             var hundredThousand = new MeasureEntry(100000);
+            var oneMillion = new MeasureEntry(1000000);
 
             CommandoTextWriter.Use();
             var table = new Commando.Table.TablePrinter("List entries", "JSON size", "Compressed size");
@@ -37,6 +38,9 @@ namespace CompressionMeasures
             table.AddRow("100 000",
                 ConvertToUnit(hundredThousand.JsonSize),
                 ConvertToUnit(hundredThousand.CompressedSize));
+            table.AddRow("1 000 000",
+                ConvertToUnit(oneMillion.JsonSize),
+                ConvertToUnit(oneMillion.CompressedSize));
             table.Print();
             Console.ReadKey();
         }
